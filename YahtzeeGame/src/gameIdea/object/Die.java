@@ -1,9 +1,17 @@
 package gameIdea.object;
 
+import java.util.Random;
+
 public class Die {
 	
-	public int Dice() {
-		return 2;
+	private int diceSide = 5;
+	private int diceValue;
+	
+	// Randomizer for value of dice
+	private Random randomizer = new Random();
+	
+	public Die() {
+		
 	}
 
 }
