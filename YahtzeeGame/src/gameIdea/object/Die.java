@@ -4,13 +4,17 @@ import java.util.Random;
 
 public class Die {
 	
-	private int diceSide = 5;
+	private int diceSides = 5;
 	private int diceValue;
 	
 	// Randomizer for value of dice
 	private Random randomizer = new Random();
 	
-	public Die() {
+	// rolls dice and 
+	public Die(int diceSides) {
+		
+		this.diceSides = diceSides;
+		this.diceValue = (randomizer.nextInt(diceSides) + 1);
 		
 	}
 
