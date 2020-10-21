@@ -24,7 +24,7 @@ public class Die {
 	}
 	
 	public void Roll() {
-		this.setDiceValue(randomizer.nextInt(diceSides));
+		this.setDiceValue(randomizer.nextInt(diceSides) + 1);
 	}
 	 public int getDiceValue() {
 		 return diceValue;
