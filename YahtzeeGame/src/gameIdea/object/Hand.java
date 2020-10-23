@@ -3,7 +3,9 @@ package gameIdea.object;
 public class Hand {
 	
 	public int YahtzeeGame() {
-		return 6;
+		
+		int temp = 6;
+		return temp;
 	}
 
 }
