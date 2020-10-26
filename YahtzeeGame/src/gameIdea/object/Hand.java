@@ -4,8 +4,7 @@ public class Hand {
 	
 	public int YahtzeeGame() {
 		
-		int temp = 6;
-		return temp;
+		return 0;
 	}
 
 }
