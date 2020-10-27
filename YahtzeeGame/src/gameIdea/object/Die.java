@@ -12,10 +12,7 @@ public class Die {
 	
 	
 //	public Die(int diceSides) {
-//		
 //		this.diceSides = diceSides;
-//		this.setDiceValue(randomizer.nextInt(diceSides) + 1);
-//		
 //	}
 	
 	public Die(int diceSides, int diceValue) {
