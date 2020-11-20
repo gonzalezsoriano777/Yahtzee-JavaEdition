@@ -10,24 +10,24 @@ public class Die {
 	public Die() {
 	}
 
-	public Die(int dicesides, int dicevalue) {
+	public Die(int dicesides) {
 		this.diceSides = dicesides;
-		this.diceValue = dicevalue;
 	}
-	
-	// able to roll a dice of six sides
+
+	// able to roll a dice of six sides.. 1 - 6
 	public void Roll(Random rand) {
 		int numRolled = rand.nextInt(diceSides) + 1;
 		diceValue = numRolled;
 	}
+
 	
 	public int getValue() {
-		if(diceValue == 0) {
+		if (diceValue == 0) {
 			System.out.println("Dice has not been rolled-- Dice not correctly rolled");
 			return diceValue;
-		} else {
-			return diceValue;
 		}
+		
+		return diceValue;
 	}
 
 }
