@@ -15,10 +15,19 @@ public class Die {
 		this.diceValue = dicevalue;
 	}
 	
-	// Once rolled it will randomize the value of the die from range of 1-6
+	// able to roll a dice of six sides
 	public void Roll(Random rand) {
 		int numRolled = rand.nextInt(diceSides) + 1;
 		diceValue = numRolled;
+	}
+	
+	public int getValue() {
+		if(diceValue == 0) {
+			System.out.println("Dice has not been rolled-- Dice not correctly rolled");
+			return diceValue;
+		} else {
+			return diceValue;
+		}
 	}
 
 }
