@@ -10,8 +10,9 @@ public class Die {
 	public Die() {
 	}
 
-	public Die(int dicesides) {
+	public Die(int dicesides, int dicevalue) {
 		this.diceSides = dicesides;
+		this.diceValue = dicevalue;
 	}
 
 	// able to roll a dice of six sides.. 1 - 6
@@ -20,14 +21,13 @@ public class Die {
 		diceValue = numRolled;
 	}
 
-	
 	public int getValue() {
 		if (diceValue == 0) {
 			System.out.println("Dice has not been rolled-- Dice not correctly rolled");
 			return diceValue;
+		} else {
+			return diceValue;
 		}
-		
-		return diceValue;
 	}
 
 }
