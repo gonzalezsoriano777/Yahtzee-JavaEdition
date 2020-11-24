@@ -13,5 +13,11 @@ public class Hand {
 		this.numberOfDice = numberOfDice;
 		this.sides = sides;
 	}
+	
+	public void generateDice() {
+		for(int count = 0; count < numberOfDice; count++) {
+			dice.add(new Die());
+		}
+	}
 
 }
