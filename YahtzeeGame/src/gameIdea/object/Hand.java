@@ -3,7 +3,7 @@ package gameIdea.object;
 import java.util.ArrayList;
 import java.util.List;
 
-public class Hand {
+public class Hand extends Die {
 
 	public List<Die> dice = new ArrayList<>();
 	private int numberOfDice = 5;
