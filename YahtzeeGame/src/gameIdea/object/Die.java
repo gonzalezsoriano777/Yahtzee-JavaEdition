@@ -10,6 +10,10 @@ public class Die {
 	public Die() {
 	}
 
+	public Die(int dicesides) {
+		this.diceSides = dicesides;
+	}
+
 	public Die(int dicesides, int dicevalue) {
 		this.diceSides = dicesides;
 		this.diceValue = dicevalue;
