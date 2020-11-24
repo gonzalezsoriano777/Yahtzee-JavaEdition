@@ -3,20 +3,21 @@ package gameIdea.main;
 import java.util.Random;
 
 import gameIdea.object.Die;
+import gameIdea.object.Hand;
 
 public class Main {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		Die dice = new Die();
 		Random rand = new Random();
-		dice.Roll(rand);
-		System.out.println(dice.getValue()); 
-		dice.Roll(rand);
-		System.out.println(dice.getValue());
-		dice.Roll(rand);
-		System.out.println(dice.getValue()); 
-
+		//Die die = new Die();
+		Hand myHand = new Hand(6, 5);
+		myHand.roll(rand);
+		System.out.println(myHand);
+		myHand.roll(rand);
+		System.out.println(myHand);
+		myHand.roll(rand);
+		System.out.println(myHand);
 	}
 
 }

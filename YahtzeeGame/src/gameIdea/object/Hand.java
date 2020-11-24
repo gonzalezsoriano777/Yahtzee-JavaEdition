@@ -7,8 +7,8 @@ import java.util.Random;
 public class Hand {
 
 	public List<Die> dice = new ArrayList<>();
-	private int numberOfDice = 5;
-	private int sides = 6;
+	private int numberOfDice;
+	private int sides;
 
 	public Hand(int sides, int numberOfDice) {
 		this.numberOfDice = numberOfDice;
@@ -29,18 +29,26 @@ public class Hand {
 			dice.add(new Die(sides));
 		}
 	}
-	
+
 	public void roll(Random random) {
-		for(var die : dice) {
+		for (var die : dice) {
 			die.Roll(random);
 		}
 	}
-	
+
 	public void roll(List<Integer> diceNumber, Random random) {
-		for(int diceNum : diceNumber) {
+		for (int diceNum : diceNumber) {
 			var die = dice.get(diceNum - 1);
 			die.Roll(random);
 		}
 	}
 
+	@Override
+	public String toString() {
+		String output = "";
+		for (var die : dice) {
+			output += die.getValue() + " ";
+		}
+		return output.trim();
+	}
 }
